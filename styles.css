@@ -1,0 +1,335 @@
+body {
+    margin: 0; /*Removes default spacing*/
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    margin-bottom: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex; /*items placed in a row*/
+    justify-content: center;
+    gap: 40px;
+    background: #1782d4;
+    max-width: 100%;
+    padding: 15px;
+    top: 0;
+    width: auto;       
+    z-index: 1000;  /*keeps navbar above other elements*/
+}
+
+.navbar a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #00d4ff;
+}
+
+/* SECTION COMMON STYLE *//**/
+.container_home {
+    padding: 70px 20px;
+    background-image: url(https://i.pinimg.com/736x/75/f7/61/75f761c040d18b897d14374f62ef1173.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    display: flex; /*Flex container*/
+}
+
+.home h1, .home p {
+    margin: 0;           /* remove default heading/paragraph spacing */
+    color: white;
+}
+
+.home{
+    font-size: 30px; 
+    
+}
+    
+.home p{
+    padding-top: 20px;
+    font-size: 30px; 
+}
+
+.section {
+    margin: 0px;
+    padding: 0px 20px;
+    text-align: left;  
+}
+
+.section h2 {
+    font-size: 50px; 
+    color: #00679E;  
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* PROJECT CARDS */
+.projects {
+    max-width: none;
+}
+
+.projects p{
+    max-width: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.projects a{
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgb(142, 255, 223);
+    display: flex; 
+    justify-content: center;
+}
+
+.project_label{
+    font-size: 40px;      /* change to any size you want */
+    font-weight: bold;    /* optional */
+    color: rgb(20, 57, 71);
+}
+
+.project-card {
+    background: #56b6ff;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /*Moves up slightly*/
+    transition: transform 0.5s; /*animation*/
+    background: linear-gradient(to bottom, #1b7de0, #66ffff); /*Gradient background*/
+} 
+
+.project_images {
+    padding-top: 30px;
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* Allow images to wrap to next row */
+}
+
+.project_images img {
+    width: 180px;
+    max-width: 100%;      /* prevents overflow */
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+.open_modal {
+    max-width: 350px;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+/* Modal Background */
+.modal {
+    display: none;             /* hidden by default */
+    position: fixed;
+    inset: 0;                  /* top:0; right:0; bottom:0; left:0; Covers full screen */
+    z-index: 1000;
+    background: rgba(0,0,0,0.85); /* dark overlay */
+    backdrop-filter: blur(3px);   /* optional blur  */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Zoom Image */
+.modal_content {
+    max-width: 80%;
+    max-height: 90%;
+    border-radius: 10px;
+    z-index: 1001;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1003;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transform: translateY(-50%);
+    z-index: 1002;
+    transition: transform 0.2s;
+}
+
+.prev:hover, .next:hover { color: #00d4ff; }
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+
+.container_about {
+    width: 80%;        /* keeps content centered */
+    margin: auto;             /* centers container */
+    padding: 20px ;
+    background-color: grey;   /* your background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;      
+}
+
+.about {
+    display: flex;
+    align-items: center;       /* vertical alignment */
+    gap: 40px;                 /* space between image and text */
+    flex-wrap: wrap;           /* stack on small screens */
+}
+
+.about img {
+    max-width: 200px;          /* fixed maximum width */
+    width: 100%;               /* scales on smaller screens */
+    height: auto;
+    padding-left: 50px;
+    border-radius: 10px;
+    flex-shrink: 0;            /* prevent image from shrinking too much */
+}
+
+.about_text h2 {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 50px;   /* change to any size you want */
+    justify-content: left;
+    font-weight: bold;
+    margin-bottom: 5px; 
+    color: #034f82;
+}
+
+.about_text {     
+    font-size: 25px; 
+    color: white;         
+    text-align: left;
+}
+
+.label {
+    font-size: 22px;      /* change to any size you want */
+    font-weight: bold;    /* optional */
+    color: #034f82;
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;  /* stack image on top on small screens */
+        text-align: center;
+    }
+
+    .about img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+}
+
+
+
+/* FORM */
+.contact {
+    text-align: left;
+}
+
+.contact form {
+    margin-left: 0;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;       /* full width of form container */
+    height: 150px;     /* fixed height */
+    resize: none;      /* prevent user from resizing */
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #00679E;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;         /* distance from bottom */
+    right: 30px;          /* distance from right */
+    padding: 12px 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00679E;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #30b6ef;
+}
+
+/* Reusable centering class */
+.center {
+    display: flex;
+    justify-content: left;
+}
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3.0s ease, transform 1.5s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade.hide {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3.0s ease, transform 1.5s ease;
+}
+

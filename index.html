@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container_home">
+<div class="home">
+    <h1>Hello I'm <br> Lee Wen Rong <br> Welcome to My Portfolio</h1>
+    <p>Showcasing my skills, experience, and creative projects.</p>
+    
+</section>
+</section>
+
+<section id="projects" class="section projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3><span class="project_label">Augmented Reality (AR) Mobile Application</span></h3>
+        <p>This project aims to create an interactive Augmented Reality (AR) mobile application 
+           that transforms traditional advertisement posters into immersive, engaging experiences. 
+           We have choose McDonald's advertisement poster for AR development. In this project we also design a complete user interface (UI) using Figma. 
+           The app allows user to scan the poster below with camera to interact with 3D models.
+           Below is a link to download AR app for Android.</p>
+           <a href="https://drive.google.com/file/d/1riUIe6lCHkirnzgJ07WvoiyOMP066awS/view?usp=sharing">Click here to download AR app Android</a>
+           <a href="https://www.figma.com/proto/I4Z1lnRvz7qdbCP3b9zQzC/Hahaha_Assignment2_CGDD?node-id=17-47&p=f&t=ixQgmeIx3sGLRWdk-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Click here to view figma.</a>
+           
+            <div class="project_images">
+            <img src="https://i.ibb.co/SwmgL6Mh/2b268386d6db61d24abf54468b6d7e67.jpg" class="open_modal">
+            <img src="https://i.ibb.co/GvJN2yqn/Whats-App-Image-2025-12-24-at-10-33-39-AM.jpg"class="open_modal">
+            <img src="https://i.ibb.co/6RV783cB/Whats-App-Image-2025-12-24-at-10-33-39-AM-1.jpg"  class="open_modal">
+            <img src="https://i.ibb.co/RkFFP81s/Whats-App-Image-2025-12-24-at-10-33-40-AM.jpg" class="open_modal">
+            </div>    
+    </div>
+
+    <div class="project-card">
+        <h3><span class="project_label">UI/UX Project for ART app</span></h3>
+        <p>A prototype of Kuching Autonomous Rapid Transit(ART) App designed using figma. The prototype was designed to collect feedback to understand 
+            users needs, behaviours and preferences. The prototype include of login page, interactive route map, ticket system. </p>
+            <a href=" https://www.figma.com/proto/lXI3vsciZScVgItzcEt05M/Project-SHOPEE_JLL-UIUX?node-id=3-99&t=bLRP0vOXEu11WYPB-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A99&show-proto-sidebar=1">Click here to view figma prototype</a>
+            <div class="project_images">
+            
+            <img src="https://i.ibb.co/ksPrPFXm/Screenshot-2025-12-04-225324.png" class="open_modal">
+            <img src="https://i.ibb.co/3JM05F1/Screenshot-2025-12-04-225336.png" class="open_modal">
+            <img src="https://i.ibb.co/9kr76zwg/Screenshot-2025-12-04-225427.png" class="open_modal">
+            <img src="https://i.ibb.co/wF4HpP4Z/Screenshot-2025-12-04-225403.png" class="open_modal">
+            </div>   
+    </div>
+
+    <div class="project-card">
+        <h3><span class="project_label">Java Project</span></h3>
+        <p>An applcation about Mental Health which is developed using Java in Visual Studio Code. 
+            The app include a learning module which will generate some tips about mental health, 
+            the app also have a quiz game and will generate simple mental health question for user to play around.</p>
+        <div class="project_images">
+            <img src="https://i.ibb.co/TxvwcDNz/Screenshot-2025-12-05-164824.png" class="open_modal">
+            <img src="https://i.ibb.co/1Gyy8C9s/Screenshot-2025-12-05-172841.png" class="open_modal">
+            <img src="https://i.ibb.co/N2Bgz2hN/Screenshot-2025-12-05-171909.png" class="open_modal">
+            </div>  
+    </div>
+</section>
+
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal_content" id="modalImg">
+    <span class="prev">&#10094;</span>  <!-- Left arrow -->
+    <span class="next">&#10095;</span>  <!-- Right arrow -->
+</div>
+
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal_content" id="modalImg">
+</div>
+
+<section id="about" class="container_about">
+<div class="about img fade">
+    <img src="https://i.ibb.co/C3SN6kLy/Whats-App-Image-2025-12-20-at-11-14-59-PM.jpg">
+    <div class="about_text fade">
+        <h2>About Me</h2>
+        <p>I'm Lee Wen Rong, studying in Bachelor’s Degree in Multimedia Computing </p>
+        <p><span class="label">Education :</span><br>Currently Year 3 Sem 1 in University Malaysia Sarawak (UNIMAS)</p>
+        <p><span class="label">Skills :</span><br>C, C++, Java, html, CSS, Javascript, Unity, Figma</p>
+        <p><span class="label">Contact :</span><br>+60 1157759858 <br> lwr9696@gmail.com</p>
+        <p><span class="label">Language :</span><br>Malay, English, Chinese, Cantonese.</p>
+    </div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
